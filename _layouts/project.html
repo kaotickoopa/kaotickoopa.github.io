@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="project-detail">
+    <header class="project-header">
+        <h1 class="project-title">{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <p class="project-subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+    </header>
+
+    <div class="project-meta">
+        {% if page.technologies %}
+        <div class="project-tech">
+            <strong>Technologies:</strong>
+            <div class="tech-tags">
+                {% for tech in page.technologies %}
+                <span class="tech-tag">{{ tech }}</span>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if page.role %}
+        <div class="project-role">
+            <strong>Role:</strong> {{ page.role }}
+        </div>
+        {% endif %}
+        
+        {% if page.date %}
+        <div class="project-date">
+            <strong>Date:</strong> {{ page.date | date: "%B %Y" }}
+        </div>
+        {% endif %}
+        
+        {% if page.link %}
+        <div class="project-links">
+            <a href="{{ page.link }}" class="btn btn-primary" target="_blank">View Live Project</a>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="project-content">
+        {{ content }}
+    </div>
+</div>

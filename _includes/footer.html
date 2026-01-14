@@ -1,0 +1,57 @@
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>{{ site.title }}</h3>
+            <p>{{ site.description }}</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/#about">About</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <ul class="social-links">
+                {% if site.author.github %}
+                <li>
+                    <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">
+                        GitHub
+                    </a>
+                </li>
+                {% endif %}
+                {% if site.author.linkedin %}
+                <li>
+                    <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">
+                        LinkedIn
+                    </a>
+                </li>
+                {% endif %}
+                {% if site.author.twitter %}
+                <li>
+                    <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener">
+                        Twitter
+                    </a>
+                </li>
+                {% endif %}
+                {% if site.author.email %}
+                <li>
+                    <a href="mailto:{{ site.author.email }}">
+                        Email
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; {% now 'utc' | date: "%Y" %} {{ site.author.name }}. All rights reserved.</p>
+        <p>Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+    </div>
+</footer>

@@ -1,0 +1,67 @@
+# Jekyll Site Configuration
+# This file contains the configuration settings for the kaotickoopa portfolio website
+
+# Site Settings
+title: "Mason's Portfolio"
+tagline: "Software Engineer & Developer"
+description: "Welcome to my professional portfolio. Explore my projects, skills, and experiences in software development."
+url: "https://kaotickoopa.github.io"
+baseurl: ""
+
+# Author Information
+author:
+  name: "Mason"
+  email: "your-email@example.com"
+  github: "kaotickoopa"
+  linkedin: "your-linkedin"
+  twitter: "your-twitter"
+
+# Build Settings
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Output Settings
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+
+# Syntax Highlighting
+highlighter: rouge
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num"
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:slug/
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:slug/
+
+# Front Matter Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
