@@ -238,7 +238,7 @@ Feel free to fork this repository and use it as a template for your own portfoli
 ## 📧 Contact
 
 For questions or feedback, reach out through:
-- Email: your-email@example.com
+- Email: masoncormany@outlook.com
 - GitHub: [@kaotickoopa](https://github.com/kaotickoopa)
 - LinkedIn: Your LinkedIn profile
 
