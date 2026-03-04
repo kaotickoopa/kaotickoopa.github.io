@@ -228,6 +228,7 @@ pre code {
 
 .main-content {
     min-height: calc(100vh - 70px);
+    
 }
 
 /* ========================================
@@ -235,7 +236,7 @@ pre code {
    ======================================== */
 
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background-image: url('kitty.jpg');
     color: var(--white);
     padding: var(--spacing-2xl) var(--spacing-md);
     text-align: center;
